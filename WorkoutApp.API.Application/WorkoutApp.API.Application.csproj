@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Exercise\" />
+    <Folder Include="Commands\Goal\" />
+    <Folder Include="Commands\Program\" />
+    <Folder Include="Commands\Workout\" />
+    <Folder Include="Behaviours\" />
+    <Folder Include="Queries\Exercise\GetExercise\" />
+    <Folder Include="Queries\Exercise\GetExercisesForUser\" />
+    <Folder Include="Queries\Exercise\GetExercisesForWorkout\" />
+    <Folder Include="Queries\Goal\GetGoal\" />
+    <Folder Include="Queries\Goal\GetGoalsForUser\" />
+    <Folder Include="Queries\Goal\GetGoalsForExercise\" />
+    <Folder Include="Queries\Program\GetProgram\" />
+    <Folder Include="Queries\Program\GetProgramsForUser\" />
+    <Folder Include="Queries\Workout\GetWorkoutsForProgram\" />
+    <Folder Include="Validation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="MediatR" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WorkoutApp.API.Core\WorkoutApp.API.Core.csproj" />
+    <ProjectReference Include="..\WorkoutApp.API.Persistence\WorkoutApp.API.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
